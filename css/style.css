@@ -1,0 +1,285 @@
+body {
+    /* background-color: #1E1E1E; */
+    /* background: rgb(64,27,110);
+background: linear-gradient(0deg, rgb(47, 10, 93) 0%, rgb(68, 9, 146) 100%);
+background-attachment: fixed; */
+background-color: #036A3B;
+background-color: #036a3b;
+background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+background-attachment: fixed; 
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'Kanit', sans-serif;
+}
+
+.main {
+    padding-bottom: 200px;
+    /* filter: blur(10px); */
+      
+}
+.gameOver {
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: radial-gradient(circle, #FFBA17 0%, #FD830A 100%);
+    border: 5px solid #2C095A;
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, #C4560D 0px -3px 0px inset;
+    display: none;
+}
+.container-reponse{
+    display: flex;
+}
+.container-reponse img{
+    width: 50px;
+    margin: 10px;
+}
+.perdu {
+    width: 350px;
+    padding-bottom: 10px;
+    display: none;
+}
+.gagne {
+    width: 350px;
+    padding-bottom: 10px;
+    display: none;
+}
+.reload {
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.container-titre {
+    display: flex;
+    justify-content: center;
+}
+.container-titre img {
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.container-history{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.history {
+    display: flex;
+    background: radial-gradient(circle, #FFBA17 0%, #FD830A 100%);
+    border: 5px solid #2C095A;
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, #C4560D 0px -3px 0px inset;
+    align-items: center;
+    border-radius: 8px;
+}
+.index {
+    color: #2C095A;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index h3 {
+    font-size: 40px;
+}
+.container-prop {
+    display: flex;
+}
+.prop {
+
+
+}
+.prop img{
+    width: 35px;
+    margin-right: 15px;
+
+}
+.container-verif {
+    display: flex;
+    max-width: 80px;
+    flex-wrap: wrap;
+
+}
+.verif {
+    min-width: 25px;
+    height: 25px;
+    background-color: #2C095A;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+.game-ui-footer-fixed {
+    position: fixed;
+    bottom: 50%;
+    left: 20px;
+    background: radial-gradient(circle, #FFBA17 0%, #FD830A 100%);
+    border: 5px solid #2C095A;
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, #C4560D 0px -3px 0px inset;
+    border-radius: 15px;
+    transform: translateY(50%);
+    padding: 8px;
+    /* filter: blur(10px); */
+}
+.ui1 {
+    display: flex;
+    justify-content: center;
+}
+.tentative img{
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.container-btn-check {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #C4560D;
+    border-bottom: 4px solid #C4560D;
+    border-radius: 4px;
+    color: #2C095A;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container-btn-check img{
+    width: 100px;
+    padding: 10px;
+
+}
+.ui2 {
+    display: flex;
+    justify-content: center;
+}
+.item img{
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    .gameOver {
+        padding: 20px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        background: radial-gradient(circle, #FFBA17 0%, #FD830A 100%);
+        border: 5px solid #2C095A;
+        box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, #C4560D 0px -3px 0px inset;
+        display: none;
+    }
+    .container-reponse{
+        display: flex;
+    }
+    .container-reponse img{
+        width: 40px;
+        margin: 10px;
+    }
+    .perdu {
+        width: 250px;
+        padding-bottom: 10px;
+    }
+    .reload {
+        width: 80px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .container-titre img {
+        width: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .index {
+        color: #2C095A;
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .index h3 {
+        font-size: 30px;
+    }
+    .prop img{
+        width: 30px;
+        margin-right: 15px;
+    
+    }
+    .container-verif {
+        display: flex;
+        max-width: 70px;
+        flex-wrap: wrap;
+    
+    }
+    .verif {
+        min-width: 15px;
+        height: 15px;
+        background-color: #2C095A;
+        margin: 5px;
+        border-radius: 50%;
+    }
+
+
+
+    .game-ui-footer-fixed {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0px;
+        left: 0px;
+        border: none;
+        border-radius: 0px;
+        transform: none;
+        padding: 8px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 1) 0px 7px 13px -3px, #C4560D 0px -3px 0px inset;
+    }
+    .ui {
+  
+    }
+    .tentative img{
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    
+    }
+    .item img{
+        width: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container-btn-check img{
+        width: 80px;
+        padding: 10px;
+    }
+
+}
